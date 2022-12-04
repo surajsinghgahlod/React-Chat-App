@@ -1,0 +1,225 @@
+
+
+/* -----------GLOBALCSS ------------------ */
+body{
+  background-color: #273432;
+}
+
+.google-btn{
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  margin: 20px;
+  margin-left: 45%;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(99, 99, 237);
+  box-shadow: 0 0 4px 0 white;
+}
+
+.google-btn:hover{
+  background-color: blue;
+}
+
+.chat-body{
+  width: 100%;
+  float:right;
+ }
+ 
+ .chatIcons {
+   display: flex;
+   float: right;
+   gap: 10px;
+   padding-right: 5px;
+ }
+ .chatIcons img {
+   height: 24px;
+   cursor: pointer;
+ }
+
+.main-container{
+  border-radius: 16px;
+  box-shadow: 0 0 5px 0 white;
+  width: 75%;
+  margin-top:30px;
+}
+.sidebar{
+  background-color: #075E54;
+  border-radius: 16px 0 0 16px;
+}
+
+/* ********************************************
+      CHAT-BOX  CSS 
+******************************************** */
+.main-chat{
+  background-color:   #73dccd;
+  border-radius: 0 16px 16px 0;
+}
+h4{
+  background-color: #075E54;
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.chat-container{
+  height: 70vh;
+  overflow-y:scroll;
+  border: 4px solid #075E54;
+  border-radius:  10px 10px 0 0;
+}
+
+.chatbox{
+  border-radius: 0 10px 10px 10px;
+  box-shadow: 0 0 4px 0 white;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #15887b;
+  color: white;
+}
+.me .chatbox{
+  border-radius: 10px 0 10px 10px;
+  box-shadow: 0 0 4px 0 black;
+  background-color: rgb(233, 229, 229);
+  color: black;
+}
+
+.container{
+  display: flex;
+}
+.container.me{
+  flex-direction: row-reverse;
+}
+
+.btm{
+  width: 100%;
+  bottom: 2px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+
+}
+.btm input{
+  padding: 10px 0;
+  padding-left: 20px;
+  flex-grow: 1;
+  border-radius: 0 0 0 16px;
+  border: none;
+  border-bottom: 4px solid #075E54;
+  border-left: 4px solid #075E54;
+ 
+}
+.btm button{
+  font-weight: bold;
+  color: white;
+  padding: 10px 60px;
+  background-color:#2a7167;
+  border-radius: 0 0 16px 0;
+  border: none;
+  border-bottom: 4px solid #075E54;
+  border-right: 4px solid #075E54;
+  border-left: 4px solid #075E54;
+}
+.btm button:hover{
+  background-color: #075E54;
+}
+input::placeholder{
+   color: #afafaf;
+   font-size: 18px;
+}
+
+
+/* ********************************************
+      SIDEBAR  CSS 
+******************************************** */
+.sidebar .navbar {
+  display: flex;
+  align-items: center;
+  background-color: #0a4b44;
+  height: 50px;
+  border-radius: 16px;
+  margin-top: 10px;
+  padding: 10px;
+  justify-content: space-between;
+  color: #ddddf7;
+}
+.sidebar .navbar .logo {
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .sidebar .navbar .logo {
+    display: none;
+ }
+}
+.sidebar .navbar .user {
+  display: flex;
+  gap: 10px;
+}
+.sidebar .navbar .user img {
+  background-color: #ddddf7;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ****************** CHAT CSS  */
+
+ .sidebar .userChat {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  cursor: pointer;
+}
+ .sidebar .userChat:hover {
+  background-color:#0a4b44;
+  border-radius: 10px;
+}
+ .sidebar .userChat img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+ .sidebar .userChat .userChatInfo span {
+  font-size: 18px;
+  font-weight: 500;
+}
+ .sidebar .userChat .userChatInfo p {
+  font-size: 14px;
+  color: lightgray;
+}
+
+.search-box{
+  padding: 6px;
+  border-radius: 10px;
+  border:none;
+  border-bottom: 1px solid white;
+  color: white;
+  background-color: transparent;
+  margin: 10px 0;
+  width: 100%;
+}
+
+
+
+/* *************** RESPONSIVENESS ******************* */
+@media screen and (min-width: 360px) and (max-width: 420px){
+  .sidebar{
+    margin: 0px!important;
+    width: 100%!important;
+  }
+  .main-chat{
+    margin: 0px!important;
+    width: 100%!important;
+  }
+  .btm input{
+    padding:10px 0px;
+  }
+  .btm button{
+    padding: 0px !important;;
+  }
+
+}
